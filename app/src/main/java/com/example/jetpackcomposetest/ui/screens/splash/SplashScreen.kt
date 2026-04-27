@@ -23,7 +23,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.jetpackcomposetest.R
-import com.example.jetpackcomposetest.config.ImageConstraints
+import com.example.jetpackcomposetest.config.ImageModelConstraints
 import com.example.jetpackcomposetest.navigation.Routes
 import com.example.jetpackcomposetest.ui.screens.splash.viewmodel.SplashViewModel
 import com.example.jetpackcomposetest.ui.theme.FacebookBg
@@ -65,7 +65,7 @@ fun SplashScreen(navHostController: NavHostController) {
                 Spacer(modifier = Modifier.height(5.dp))
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     UiImageView(
-                        ImageConstraints.icMetaLogo, modifier = Modifier
+                        ImageModelConstraints.icMetaLogo, modifier = Modifier
                             .width(20.dp)
                             .height(20.dp)
                     )
@@ -80,7 +80,7 @@ fun SplashScreen(navHostController: NavHostController) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 UiImageView(
-                    ImageConstraints.icAppLogo, modifier = Modifier
+                    ImageModelConstraints.icAppLogo, modifier = Modifier
                         .width(60.dp)
                         .height(60.dp)
                 )
